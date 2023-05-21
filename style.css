@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.header_container{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: rgba(22, 22, 23, .8);
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    top: 0;
+    z-index: 1;
+}
+.header_container nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 50px;
+}
+nav ul li {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+nav ul li a{
+    color: rgb(200, 200, 206);
+}
+nav ul li a:hover{
+    color: white;
+    transition: all 0.8s;
+    animation-delay: 0.3s;
+}
+.apple_icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.container{
+    width: 100%;
+    margin-top: 70px;
+    position: relative;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.apple_box{
+    background-color: black;
+
+}
+.apple_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.links a{
+    color: rgb(34, 80, 246);
+    font-size: 30px;
+    margin-left: 20px;
+
+}
+.apple_box h1{
+    font-size: 50px;
+    color: white;
+
+}
+.apple_box h3{
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.background_img{
+   width: 100%;
+   padding: 50px 100px 0 100px;
+}
+.background_img img{
+    width: 100%;
+}
+.white_container{
+    width: 100%;
+    background-color: white;
+    margin-top: 40px;
+}
+.mobile_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mobile_box h1{
+    font-size: 50px;
+}
+.mobile_box h3{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mobile_box a{
+    color: rgb(34, 80, 246);
+    font-size: 30px;
+    margin-left: 20px;
+}
+.mobile_box a:hover{
+    text-decoration: underline;
+}
+.background_imgg{
+    padding: 50px 200px 0 200px;
+}
+.background_imgg img{
+    width: 100%;
+}
+.mobile_header{
+    display: none;
+}
+.burger_bar{
+    display: none;
+}
+@media (max-width:1024px)  {
+    nav{
+        display: none;
+    }
+    .mobile_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .mobile_icon{
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+}
+.burger_bar{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 51px;
+    
+}
+.burger_bar li {
+    font-size: 28px;
+    margin-top: 20px;
+}
+.burger_bar a{
+    color: rgb(225, 225, 225);
+    text-decoration: none;
+}
+.burger_bar a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.8s;
+    animation-delay: 0.5s;
+    font-size: 29px;
+}
+@media (max-width:768px){
+    .background_imgg{
+        padding: 0;
+        padding-top: 20px;
+    }
+}
+@media (max-width:328px){
+    .apple_box h1 {
+        font-size: 30px;
+    }
+    .apple_box h3{
+        font-size: 20px;
+    }
+    .links a{
+        font-size: 20px;
+    }
+    .container{
+        margin-top: 60px;
+    }
+    .mobile_box h3{
+        font-size: 20px;
+    }
+    .mobile_box h1{
+        font-size: 30px;
+    }
+    .background_img{
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
