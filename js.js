@@ -23,3 +23,12 @@ let width  = 5
 let fartobi =`მართკუთხედის ფართობია : ${lenght * width} მ.კვ`
 console.log(fartobi)
 
+function myFunctiontwo() {
+  var x = document.getElementById("burger")
+  if (x.style.display == "block") {
+    x.style.display = "none";
+    
+  } else {
+    x.style.display = "block" ;   
+  }
+}
