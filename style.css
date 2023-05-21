@@ -175,6 +175,14 @@ nav ul li a:hover{
     animation-delay: 0.5s;
     font-size: 29px;
 }
+.div_box{
+    padding: 20px;
+
+}
+.box div{
+    display: flex;
+    flex-direction: row;
+}
 @media (max-width:768px){
     .background_imgg{
         padding: 0;
