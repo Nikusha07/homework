@@ -46,6 +46,47 @@ let number = {
 }
 for (i in number)
 console.log(number[i])
+const currentDay = new Date().getDay();
+
+switch (currentDay) {
+  case 0:
+    console.log("Sunday");
+    break;
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  default:
+    console.log("Invalid day");
+    break;
+}
+if (currentDay === "wednesday"){
+  console.log("hellow");
+}
+
+
+
+
+
+
+
+
+
+
 
 function myFunctiontwo() {
   var x = document.getElementById("burger")
