@@ -11,10 +11,11 @@
     position: fixed;
     background-color: rgba(22, 22, 23, .8);
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
     top: 0;
     z-index: 1;
+}
+nav{
+    margin: 0 auto;
 }
 .header_container nav ul{
     display: flex;
@@ -141,6 +142,8 @@ nav ul li a:hover{
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .mobile_icon{
         width: 20px;
@@ -174,6 +177,69 @@ nav ul li a:hover{
     transition: all 0.8s;
     animation-delay: 0.5s;
     font-size: 29px;
+}
+.container_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+.aplle_box_icon{
+    width: 35px;
+    height: 35px;
+    
+}
+.boxs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 49%;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+.in_box div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.in_box{
+    display: flex;
+    flex-direction: column;
+}
+.boxs p{
+    font-weight: 600;
+    font-size: 40px;
+}
+.boxs span{
+    font-size: 20px;
+    word-spacing: 4px;
+    font-weight: 400;
+}
+.tradein{
+    margin-left: 6%;
+}
+.box_backgroundimg{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.boxs img{
+    width: 100%;
+    object-fit: cover;
+}
+.tradein:hover{
+    text-decoration: underline;
+}
+@media (max-width:1060px){
+    .container_box{
+        justify-content: center;
+    }
+    .boxs{
+        width: 100%;
+    }
 }
 @media (max-width:768px){
     .background_imgg{
@@ -210,4 +276,22 @@ nav ul li a:hover{
         padding-left: 20px;
         padding-right: 20px;
     }
+    .boxs p{
+        font-size: 30px;
+    }
+    .boxs span{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .tradein{
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .in_box{
+        gap: 3px;
+    }
 }
+
