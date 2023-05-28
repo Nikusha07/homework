@@ -1,92 +1,72 @@
-let person = {
-  firstName: 'nika',
-  lastName: 'tefnadze',
-  isRegister: true,
-  age:20,
-  address: {
-    street: '123 Main St',
-    city: 'Exampleville',
-    state: 'NY',
-    country: 'USA'
-  },
-  hobbies: ['coding', 'traveling', 'workout']
+//მეექვსე დავალებას მსგავსია მეწერა თულუწია ლუწევშუამატებს თუკენტია კენტებში.
+let array4=[1,2,3,4]
+let odd =[];
+let even = [];
+for (let i = 0; i <array4.length; i++){
+    const number1 = array4[i];
+    if (number1 % 2 ===0) {
+        console.log("ლუწებია");
+        odd.push(number1);
+        console.log(odd)
+    }
+    else{
+        console.log("კენტებია");
+        even.push(number1);
+        console.log(even);
+    }
 }
-if (person.isRegister && person.age > 18){
-console.log(`მე მქვია: ${person.firstName} ${person.lastName} linkdinze registrirebuli ${person.isRegister} ჩემი საყვარელი ჰობია: ${person.hobbies[2]}`)
+//1
+for (let i = 0; i <= 100; i++) {
+  console.log(i);
 }
-else (console.log('daregistrirdi'))
-let array = {
-  slary: 20,
-  fee: 30,
-  age: [17],
-  month: 8,
-  day: 22,
+//2
+for (let i = 0; i <= 50; i++) {
+    console.log(i);
 }
-
-console.log(`ყველა ელემენტის ჯამია : ${array.slary + array.fee + array.month + array.day}`)
-let array2 = {
-  name : ["luka", "nika"],
-  age : 20,
-  address :{
-      city : "man unt",
-      street : "sunit",
+//3
+let person = ["nika", "luka", "gio", "gigi", "giga"]
+person.push("alika");
+console.log(person);
+person.pop()
+console.log(person)
+person.shift(person)
+console.log(person)
+person.unshift("gizo")
+console.log(person)
+//4
+x = []
+for (let index = 0; index < 1000; index++) {
+    y = index * index
+    x.push(y)
+}
+console.log(x)
+//5
+array = [2,4,5,78,9];
+let sum = 0;
+for (let i = 0; i < array.length; i++) {
+    sum += array[i];
   }
+console.log(`ყველა ელემენტის ჯამია : ${sum}`)
+//6
+function isOdd(number) {
+    return number % 2 !== 0;
+  }
+console.log(isOdd(5));
+//7
+function human(uppercaseString) {
+    return uppercaseString.toLowerCase();
+  }
+console.log(human("MY NAME IS JOHN"));
+//8
+array6 = [1,2,3,15,6,36,78,23]
+filter = []
+for ( let i = 0; i < array6.length; i++ ){
+    const local = array6[i];
+    if (local % 2 === 0){
+        filter.push(local)
+    }
 }
-console.log(`my name is ${array2.name[0]} / my age is : ${array.age[0]} my addres is : ${person.address.city}`);
-if (array.age[0] > 18 ){
-  console.log("სრულწლოვანია");
-}
-else (console.log("არასრულწლოვანია"))
-let number = {
-  date : 40,
-  day : 30,
-  age : 20,
-  nom : 221,
-  id : 2,
-}
-for (i in number)
-console.log(number[i])
-const currentDay = new Date().getDay();
-
-switch (currentDay) {
-  case 0:
-    console.log("Sunday");
-    break;
-  case 1:
-    console.log("Monday");
-    break;
-  case 2:
-    console.log("Tuesday");
-    break;
-  case 3:
-    console.log("Wednesday");
-    break;
-  case 4:
-    console.log("Thursday");
-    break;
-  case 5:
-    console.log("Friday");
-    break;
-  case 6:
-    console.log("Saturday");
-    break;
-  default:
-    console.log("Invalid day");
-    break;
-}
-if (currentDay === "wednesday"){
-  console.log("hellow");
-}
-
-
-
-
-
-
-
-
-
-
+console.log(filter)
 
 function myFunctiontwo() {
   var x = document.getElementById("burger")
@@ -95,5 +75,38 @@ function myFunctiontwo() {
     
   } else {
     x.style.display = "block" ;   
+  }
+}
+
+function myFunction() {
+  var x = document.getElementById("searchh")
+  var y = document.getElementById("bag")
+  var z = document.getElementById("burger")
+  if (x.style.display == "flex") {
+    x.style.display = "none"
+    x.style.height= "0px"
+    y.style.display="none"
+    z.style.display="none"
+  } else {
+    x.style.display = "flex" ; 
+    x.style.height = "400px";
+    y.style.display="none"
+    z.style.display="none"
+  }
+}
+function myFunctionthree() {
+  var y = document.getElementById("searchh")
+  var x = document.getElementById("bag")
+  var z = document.getElementById("burger")
+  if (x.style.display == "flex") {
+    x.style.display = "none"
+    x.style.height= "0px"
+    y.style.display="none"
+    z.style.display="none"
+  } else {
+    x.style.display = "flex" ; 
+    x.style.height = "400px";
+    y.style.display="none"
+    z.style.display="none"
   }
 }

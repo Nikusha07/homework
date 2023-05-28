@@ -233,12 +233,203 @@ nav ul li a:hover{
 .tradein:hover{
     text-decoration: underline;
 }
+#searchh{
+    display: none;
+    position: absolute;
+    top: 100%;
+    height: 0px;
+    z-index: -1;
+    justify-content: inherit;
+    padding-left: 15%;
+    padding-top: 3%;
+    width: 100%;
+    background-color: rgba(22, 22, 23, 0.99);;
+}
+#searchh input{
+    height: 8%;
+    width: auto;
+    font-size: 25px;
+    background-color: rgba(22, 22, 23, 1);
+    border: none;
+}
+#searchh input:focus{
+    outline: none;
+}
+#searchh ::placeholder{
+    font-size: 25px;
+    border: none;
+    color: rgb(184, 194, 204);
+}
+.input{
+    display: flex;
+    justify-content: inherit;
+    align-items: start;
+    gap: 4px;
+}
+#searchh span{
+    color: rgb(209, 213, 217);
+    font-size: 20px;
+}
+.head_links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    gap: 5px;
+}
+.head_links a{
+    font-size: 18px;
+    color: wheat;
+    display: flex;
+}
+.head_links img{
+    width: 15px;
+}
+.img_links a:hover{
+    font-size: 20px;
+    color: white;
+    transition: all 1s;
+}
+.img_links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#bag{
+    display: none;
+    position: absolute;
+    top: 100%;
+    height: 0px;
+    z-index: -1;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(22, 22, 23, 0.99);
+    align-items: center;
+    flex-direction: column;
+}
+#bag p{
+    font-size: 30px;
+    color: azure;
+}
+#bag span{
+    font-size: 25px;
+    margin-top: 20px;
+    color: wheat;
+}
+#bag a{
+    font-weight: 800;
+    text-decoration: underline;
+}
+.signin_container{
+    padding-left: 19%;
+    padding-right: 19%;
+    margin-top: 70px;
+}
+.signin_container{
+    font-size: 30px;
+    font-weight: 500;
+}
+.sign_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5%;
+}
+.sign_box{
+    font-size: 30px;
+    opacity: 0.8;
+    font-weight: 700;
+}
+.sign_box input{
+    width: 30%;
+    height: 35px;
+    border-radius: 8px;
+    padding-top: 2px;
+    padding-left: 5px;
+    font-size: 25px;
+    opacity: 0.8;
+}
+.checkbox_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+
+}
+.checkbox_line input{
+    width: 15px;
+    height: 15px;
+    border-radius: ;
+}
+.checkbox_line input:focus{
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.checkbox_line span{
+    font-size: 25px;
+}
+.sign_box input:focus{
+    outline: none;
+    border: 2px solid rgb(14, 58, 203);
+    opacity: 0.8;
+}
+.signin_container a{
+    font-size: 20px;
+    color: rgb(65, 119, 235);
+}
+.apple_id{
+    font-size: 20px;
+}
+.into_line{
+    height: 1px;
+    opacity: 0.3;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    background-color: black;
+   
+}
+.foot_into_line{
+    height: 1px;
+    opacity: 0.3;
+    position: absolute;
+    top: 70%;
+    width: 54%;
+    background-color: black;
+   
+}
+.before_footer{
+    position: absolute;
+    top: 72%;
+    padding-left: 19%;
+}
+.foot_container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 4%;
+    height: 200px;
+    background-color: antiquewhite;
+    width: 100%;
+}
+.foot_box{
+    padding-left: 19%;
+    padding-right: 19%;
+}
 @media (max-width:1060px){
     .container_box{
         justify-content: center;
     }
     .boxs{
         width: 100%;
+    }
+}
+@media (max-width:820px){
+    .signin_container h2{
+        font-size: 35px;
     }
 }
 @media (max-width:768px){
@@ -252,9 +443,63 @@ nav ul li a:hover{
         padding-right: 20px;
     }
 }
+@media (max-width:660px){
+    .before_footer{
+        padding-left: 5%;
+        top: 58%;
+    }
+    .signin_container h2{
+        font-size: 25px;
+    }
+    .signin_container {
+        padding-left: 7%;
+        padding-right: 7%;
+        margin-top: 70px;
+    }
+    .foot_box {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .into_line{
+        top: 65%;
+    }
+    .foot_into_line {
+        height: 1px;
+        opacity: 0.3;
+        position: absolute;
+        top: 70%;
+        width: 90%;
+        background-color: black;
+    }
+}
+@media (max-width:500px){
+    #searchh{
+        padding-left: 5%;
+    }
+    .signin_container{
+        padding-left: 2%;
+    }
+    .sign_box input{
+        width: 50%;
+    }
+    .sign_box p{
+        font-size: 15px;
+    }
+    .checkbox_line span {
+        font-size: 15px;
+    }
+    .signin_container a {
+        font-size: 15px;
+    }
+}
 @media (max-width:328px){
     .apple_box h1 {
         font-size: 30px;
+    }
+    #searchh ::placeholder{
+        font-size: 20px;
+        border: none;
+        color: rgb(184, 194, 204);
     }
     .apple_box h3{
         font-size: 20px;
