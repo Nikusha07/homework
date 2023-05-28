@@ -366,7 +366,7 @@ nav ul li a:hover{
     border-radius: ;
 }
 .checkbox_line input:focus{
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   box-shadow: rgba(0, 94, 246, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .checkbox_line span{
     font-size: 25px;
@@ -495,6 +495,9 @@ nav ul li a:hover{
 @media (max-width:328px){
     .apple_box h1 {
         font-size: 30px;
+    }
+    .foot_into_line{
+        display: none;
     }
     #searchh ::placeholder{
         font-size: 20px;
