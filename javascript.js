@@ -1,5 +1,5 @@
 //მეექვსე დავალებას მსგავსია მეწერა თულუწია ლუწევშუამატებს თუკენტია კენტებში.
-let array4=[1,2,3,4]
+let array4=[1,2,3,4,6,7,14,16]
 let odd =[];
 let even = [];
 for (let i = 0; i <array4.length; i++){
@@ -110,3 +110,67 @@ function myFunctionthree() {
     z.style.display="none"
   }
 }
+//1
+const evenFor = (number) =>{
+  if (number % 3 ===0){
+    return true
+  } 
+  else{
+    return false
+  }
+}
+//2
+console.log(evenFor (6));
+function getCurrencySymbolFromCode (same){
+  if (same === "usd"){
+    return "$";
+  }
+  
+  if (same === "eur"){
+    return "e";
+  }
+  if (same === "ლარი"){
+    return "ლ";
+  }
+  else{
+    console.log("არ არსებობს ეგეთი ვალუტა ბაზაში")
+  }
+}
+console.log(getCurrencySymbolFromCode("usd"))
+console.log(getCurrencySymbolFromCode("eur"))
+console.log(getCurrencySymbolFromCode("ლარი"))
+console.log(getCurrencySymbolFromCode("ლირა"))
+//3
+const getLowerCase = (WordCanger) =>{
+  let x = WordCanger.toLowerCase();
+  return x ;
+}
+console.log(getLowerCase("MY NAME IS JOHN"))
+//4
+// a = გასაყიდ ფასს
+// b = მოგების ფასი
+const percent = (a , b) =>{
+  let c = b*100 / a
+  return c
+}
+console.log(`მოგებაა ${percent(40 , 15)} %`)
+//5
+let filteredNumbers = array4.filter((item) => item % 2 === 0);
+console.log(filteredNumbers)
+//6
+function findObjectByName(objects, searchName) {
+  for (let i = 0; i < objects.length; i++) {
+    if (objects[i].name === searchName) {
+      return objects[i];
+    }
+  }
+  return null;
+}
+const myObjects = [
+  { name: "Apple", color: "Red" },
+  { name: "Banana", color: "Yellow" },
+  { name: "Orange", color: "Orange" }
+];
+
+const searchedObject = findObjectByName(myObjects, "Apple");
+console.log(searchedObject);

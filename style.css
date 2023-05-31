@@ -230,6 +230,41 @@ nav ul li a:hover{
     width: 100%;
     object-fit: cover;
 }
+.in_box_text{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.on_text{
+    position: absolute;
+    color: white;
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.on_text a{
+    font-size: 40px;
+    color: rgb(81, 81, 253);
+}
+.on_text a:hover{
+    text-decoration: underline;
+}
+.on_text span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.in_box_text img{
+    width: 60px;
+}
+.boxs_back{
+    height: 100%;
+}
 .tradein:hover{
     text-decoration: underline;
 }
